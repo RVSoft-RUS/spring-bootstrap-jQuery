@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+<div th:insert="~{header :: outlog}"></div>
+Errors:
+<br>
+<h3 th:object="${errorText}" th:text="${errorText}"></h3>
+</body>
+</html>

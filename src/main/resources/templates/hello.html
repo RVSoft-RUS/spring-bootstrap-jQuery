@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+    <button class="btn btn-danger" data-toggle="collapse" href="#hide">JS Collapse</button>
+    <div class="collapse in" id="hide">
+        Какой-либо скрытый текст!
+    </div>
+    <a class="btn btn-warning" href='/logout'> Выйти нах! </a>
+    <div class="panel-group" id="collapse-group">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Первый</a>
+            </div>
+            <div id="el1" class="collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            </div>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el2">Второй</a>
+            </div>
+            <div id="el2" class="collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-info" data-toggle="modal" data-target="#myModal"> Всплывающее окно </button>
+    <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h4 class="modal-title">Заголовок окна</h4>
+                    <button class="close" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">Некий текст уведомления</div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
